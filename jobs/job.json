@@ -1,0 +1,22 @@
+    "name": "Jenkins-job-today",
+    "email_notifications": {
+      "no_alert_for_skipped_runs": false
+    },
+    "webhook_notifications": {},
+    "timeout_seconds": 0,
+    "max_concurrent_runs": 1,
+    "tasks": [
+      {
+        "task_key": "Job-jenkins",
+        "run_if": "ALL_SUCCESS",
+        "notebook_task": {
+          "notebook_path": "/Workspace/Users/s.prashant.ande@accenture.com/Job_jenkins",
+          "source": "WORKSPACE"
+        },
+        "existing_cluster_id": "0217-045709-oylhyd6v",
+        "timeout_seconds": 0,
+        "email_notifications": {}
+      }
+    ],
+    "format": "MULTI_TASK",
+    
